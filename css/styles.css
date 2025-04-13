@@ -1,0 +1,131 @@
+  /* -------------------------------------------------------------- */
+  /* INDEX.HTML */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  body {
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background: #eaf4fb;
+    width: 200px;
+    padding: 2rem 1rem;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sidebar li.active {
+    background: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background: #fff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+  }
+  
+  .blue-card {
+    background: #eaf4fb;
+  }
+  
+  .peach-card {
+    background: #ffe9e5;
+  }
+  
+  .image-card {
+    background: #eaf4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-card img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .journal-card {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .pet-section {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    width: 100%;
+    background: #d2e9d0;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .blue-btn {
+    background: #aecce9;
+    color: white;
+  }
+  
+  .peach-btn {
+    background: #f9c6b7;
+    color: white;
+  }
+  
+  /* -------------------------------------------------------------- */
