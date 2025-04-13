@@ -7,7 +7,8 @@
     font-family: 'Nunito', sans-serif;
   }
   
-  body {
+  body 
+  {
     background: #fdfdfd;
     color: #333;
   }
@@ -22,6 +23,11 @@
     background: #eaf4fb;
     width: 200px;
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:fixed;
+    height:100vh;
   }
   
   .sidebar h1 {
@@ -36,14 +42,14 @@
   
   .sidebar li 
   {
-    padding: 0.75rem 1rem;
     margin-bottom: 0.5rem;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
   }
   
-  .sidebar li.active {
+  .sidebar li.active 
+  {
     background: white;
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -149,14 +155,16 @@
     color: white;
   }
   
-  .sidebar li a 
-  {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      width: 100%;
-      height: 100%;
+  .sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 1rem; /* match li padding */
+    border-radius: 12px;
   }
+  
 
 
   /* -------------------------------------------------------------- */
@@ -223,18 +231,102 @@
   }
 
   /* -------------------------------------------------------------- */
+  /* Journal Page Elements  */
+
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left:200px;
+  }
+  
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .input-box {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .input-box input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .input-box button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+/* -------------------------------------------------------------- */
+/* Games Page Layout */
+.game-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.game-card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 230px;
+}
+
+.game-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.game-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+
+
+  /* -------------------------------------------------------------- */
   /* Universal Elements  */
 
   .profile
   {
    display: flex;
    align-items: center;
+   flex-direction: row;
    gap: 0.5rem;
+   margin-bottom: 0px;
+   margin-top: auto;
+   border-radius: 5px;;
+   border:2px solid black;
+   padding:10px;
  }
 
  .profile img 
  {
    width: 30px;
    height: 30px;
-   border-radius: 50%;
  }
