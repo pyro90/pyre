@@ -128,4 +128,16 @@
     color: white;
   }
   
+  .sidebar li a 
+  {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+      height: 100%;
+  }
+
+
   /* -------------------------------------------------------------- */
+  /* PET PAGE */
+
