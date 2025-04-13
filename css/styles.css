@@ -28,6 +28,7 @@
     justify-content: space-between;
     position:fixed;
     height:100vh;
+    z-index: 10;
   }
   
   .sidebar h1 {
@@ -60,11 +61,6 @@
     background: white;
   }
   
-  .main-content {
-    flex: 1;
-    padding: 2rem;
-    background: #fff;
-  }
   
   h2 {
     font-size: 2rem;

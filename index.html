@@ -9,48 +9,58 @@
 </head>
 <body>
   <div class="container">
+    
+    <!-- Sidebar -->
     <aside class="sidebar">
       <h1>Mental</h1>
       <nav>
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="breathing.html">Breathing</a></li>
-          <li ><a href="pet.html">Pet</a></li>
+          <li><a href="pet.html">Pet</a></li>
           <li><a href="journal.html">Journal</a></li>
           <li><a href="games.html">Games</a></li>
         </ul>
       </nav>
-     
+
       <div class="profile">
-        <span>test_username</span>
         <img src="img/profile.png" alt="User Icon"/>
+        <span>test_username</span>
       </div>
-
     </aside>
+
+    <!-- Main Content -->
     <main class="main-content">
-      <h2>Home</h2>
+      <h2>Welcome back 👋</h2>
+      <p style="margin-bottom: 2rem;">Here are your current mindfulness tools:</p>
 
-      <section class="card blue-card">
-        <h3>Breathe</h3>
-        <button class="btn blue-btn">Begin Exercise</button>
-      </section>
+      <div class="grid">
+        <section class="card blue-card">
+          <h3>Breathe</h3>
+          <p>Use guided breathing to calm your body.</p>
+          <button class="btn blue-btn">Begin Exercise</button>
+        </section>
 
-      <section class="pet-section">
-        <div class="card peach-card">
+        <section class="card peach-card">
           <h3>Your Pet</h3>
           <div class="progress-bar"></div>
-        </div>
-        <div class="card image-card">
-          <img src="img/pet.png" alt="Cute Pet"/>
-        </div>
-      </section>
+          <img src="img/pet.png" alt="Cute Pet" style="width: 100px; margin-top: 1rem;" />
+        </section>
 
-      <section class="card journal-card">
-        <h3>Journal</h3>
-        <p>An AI journal to assist in understanding of mood</p>
-        <button class="btn peach-btn">Play</button>
-      </section>
+        <section class="card journal-card">
+          <h3>Journal</h3>
+          <p>An AI journal to assist in understanding your mood.</p>
+          <button class="btn peach-btn">Open Journal</button>
+        </section>
+
+        <section class="card green-card">
+          <h3>Relaxing Games</h3>
+          <p>Play calming and fun games.</p>
+          <button class="btn green-btn">Explore Games</button>
+        </section>
+      </div>
     </main>
+
   </div>
 </body>
 </html>
