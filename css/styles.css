@@ -310,6 +310,10 @@
 }
 
 
+  /* -------------------------------------------------------------- */
+  /* Landing Page Elements  */
+
+
 
   /* -------------------------------------------------------------- */
   /* Universal Elements  */
@@ -323,7 +327,24 @@
    border-radius: 5px;;
    padding:10px;
    transition: 0.3s;
+   z-index: 100;
+   background: white;
  }
+
+ .profile-box 
+ {
+  position: absolute;
+  top: 110px; /* adjust based on your layout */
+  right: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 200px;
+  z-index: 1;
+}
 
  .profile:hover
  {
@@ -391,6 +412,35 @@ border-radius: 10px;
   align-items: center;
   color:rgb(40, 173, 64);
   font-weight: 1000;
+}
+
+.profile-box.show {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.profile-box p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.profile-box a {
+  display: block;
+  text-decoration: none;
+  color: #1f2937;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.profile-box a:hover {
+  background-color: #f3f4f6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {

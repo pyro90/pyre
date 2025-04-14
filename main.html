@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Pyre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to right, #dbeafe, #f0fdf4);
+      color: #1f2937;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      color: #3b82f6;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-btn {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2937;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .nav-btn.signup {
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    .nav-btn:hover {
+      background-color: #e5e7eb;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .primary-btn {
+      background-color: #10b981;
+      color: white;
+    }
+
+    .primary-btn:hover {
+      background-color: #059669;
+    }
+
+    .secondary-btn {
+      background-color: white;
+      border: 2px solid #10b981;
+      color: #065f46;
+    }
+
+    .secondary-btn:hover {
+      background-color: #ecfdf5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Pyre</h1>
+    <nav>
+      <a href="login.html" class="nav-btn">Login</a>
+      <a href="register.html" class="nav-btn signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <div class="container fade-in">
+    <main class="hero">
+      <h2>Relax. Breathe. Play.</h2>
+      <p>Your go-to hub for mental wellness. From calming games to guided breathing — Pyre helps you recharge and feel in control.</p>
+      <div class="cta-buttons">
+        <a href="register.html" class="btn primary-btn">Get Started</a>
+        <a href="login.html" class="btn secondary-btn">I already have an account</a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Pyre. All rights reserved.
+  </footer>
+
+</body>
+</html>
