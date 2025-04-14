@@ -13,17 +13,19 @@
     color: #333;
   }
   
-  .container {
+  .container 
+  {
     display: flex;
     height: 100vh;
   }
   
   /* Sidebar */
-  .sidebar {
+  .sidebar 
+  {
+    display:block;
     background: #eaf4fb;
     width: 200px;
     padding: 2rem 1rem;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     position:fixed;
@@ -319,6 +321,12 @@
    border-radius: 5px;;
    border:2px solid black;
    padding:10px;
+   transition: 0.3s;
+ }
+
+ .profile:hover
+ {
+  background-color: #8e8e8e27 ;
  }
 
  .profile img 
@@ -327,7 +335,31 @@
    height: 30px;
  }
 
- @keyframes fadeIn {
+ .profile-box 
+ {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom:100px;
+  width:100%;
+}
+
+.profile-section
+{
+  display:block;
+  position:relative;
+  margin-top:auto;
+  margin-bottom:10px;
+  border:2px solid black;
+
+}
+
+ @keyframes fadeIn 
+ {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -337,3 +369,4 @@
     transform: translateY(0);
   }
 }
+
