@@ -82,10 +82,13 @@
   .blue-card 
   {
     background: #eaf4fb;
+    width:100%;
   }
   
   
-  .peach-card {
+  .peach-card 
+  {
+    width:100%;
     background: #ffe9e5;
   }
   
@@ -231,7 +234,8 @@
   /* -------------------------------------------------------------- */
   /* Journal Page Elements  */
 
-  .main-content {
+  .main-content 
+  {
     flex: 1;
     padding: 2rem;
     display: flex;
@@ -316,10 +320,7 @@
    align-items: center;
    flex-direction: row;
    gap: 0.5rem;
-   margin-bottom: 0px;
-   margin-top: auto;
    border-radius: 5px;;
-   border:2px solid black;
    padding:10px;
    transition: 0.3s;
  }
@@ -335,32 +336,61 @@
    height: 30px;
  }
 
- .profile-box 
- {
-  display: none;
-  position: absolute;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-bottom:100px;
-  width:100%;
-}
-
 .profile-section
 {
-  display:block;
-  position:relative;
-  margin-top:auto;
-  margin-bottom:10px;
-  border:2px solid black;
-
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+gap:30px;
+margin-right:0px;
+margin-left:auto;
+margin-top:10px;
+margin-bottom:auto;
+border:2px solid rgba(4, 108, 226, 0.286);
+padding:10px;
+border-radius: 10px;
 }
 
 .fade-in 
 {
   animation: fadeIn 0.5s ease-out;
+}
+
+.header-content
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.coins img
+{
+  height:50px;
+}
+
+.diamonds img
+{
+  height:40px;
+}
+
+
+.diamonds 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  color:rgb(96, 141, 231);
+  font-weight: 1000;
+}
+
+.coins 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:rgb(40, 173, 64);
+  font-weight: 1000;
 }
 
 @keyframes fadeIn {

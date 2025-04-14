@@ -1,72 +1,84 @@
-<!-- breathing.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Breathing Exercises</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <style>
-   
-   body 
-    {
-      font-family: 'Nunito', sans-serif;
-      margin: 0;
-      display: flex;
-      height: 100vh;
-      background: #fff;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-        <h1>Mental</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="breathing.html">Breathing</a></li>
-            <li><a href="pet.html">Pet</a></li>
-            <li><a href="journal.html">Journal</a></li>
-            <li><a href="games.html">Games</a></li>
-          </ul>
-          <div class="profile">
-            <img src="img/profile.png" alt="User Icon"/>
-            <span>test_username</span>
-          </div>
-        </div>
+      <h1>Mindful</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breathing.html">Breathing</a></li>
+        <li><a href="pet.html">Pet</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li class="active"><a href="games.html">Games</a></li>
+      </ul>
+
+    </div>
 
     <div class="main-content">
-      <div class = "fade-in">
-      <h2>Breathing Exercises</h2>
-      <p>Take a few minutes to breathe and reset.</p>
+     <div class = "fade-in">
+      
+      <div class = "header-content">
+        <div class = "page-info">
+          <h2>Relaxing Games</h2>
+          <p style="margin-bottom: 2rem;">Here are some of the most popular relaxation games for you!</p>
+          
+        </div>
+       
+       <div class = "profile-section">
+        <div class = "coins">
+          <img src = "img/coin.png">
+          <p>100</p>
+        </div>
 
-      <div class="card blue-card">
-        <h3>Box Breathing</h3>
-        <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
-        <button class="btn blue-btn">Start</button>
+        <div class = "diamonds">
+          <img src = "img/diamond.png">
+          <p>100</p>
+        </div>
+       
+        <div class="profile" onclick="toggleBox()">
+          <img src="img/profile.png" alt="User Icon"/>
+          <span>test_username</span>
+        </div>
+  
+       </div>
       </div>
 
-      <div class="card peach-card">
-        <h3>4-7-8 Breathing</h3>
-        <p>Inhale for 4 seconds, hold for 7, exhale for 8. Great for calming down.</p>
-        <button class="btn peach-btn">Start</button>
-      </div>
 
-      <div class="card blue-card">
-        <h3>Belly Breathing</h3>
-        <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
-        <button class="btn blue-btn">Start</button>
-      </div>
+<div class="card blue-card">
+  <h3>Box Breathing</h3>
+  <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
+  <button class="btn blue-btn">Start</button>
+</div>
 
-      <!-- Tailored section (placeholder) -->
-      <div class="card">
-        <h3>Recommended for You</h3>
-        <p>Log in to get breathing exercises based on how you’re feeling.</p>
-        <!-- Later: Add conditional logic for logged-in users -->
-      </div>
+<div class="card peach-card">
+  <h3>4-7-8 Breathing</h3>
+  <p>Inhale for 4 seconds, hold for 7, exhale for 8. Great for calming down.</p>
+  <button class="btn peach-btn">Start</button>
+</div>
+
+<div class="card blue-card">
+  <h3>Belly Breathing</h3>
+  <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
+  <button class="btn blue-btn">Start</button>
+</div>
+
+<!-- Tailored section (placeholder) -->
+<div class="card">
+  <h3>Recommended for You</h3>
+  <p>Log in to get breathing exercises based on how you’re feeling.</p>
+  <!-- Later: Add conditional logic for logged-in users -->
+</div>
+
+      
     </div>
-    </div>
+  </div>
   </div>
 </body>
 </html>
