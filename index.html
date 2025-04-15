@@ -36,22 +36,25 @@
         </div>
        
        <div class = "profile-section">
-        <div class = "coins">
-          <img src = "img/coin.png">
-          <p>100</p>
-        </div>
-
-        <div class = "diamonds">
-          <img src = "img/diamond.png">
-          <p>100</p>
+        <div class = "full-profile">
+          <div class = "coins">
+            <img src = "img/coin.png">
+            <p>100</p>
+          </div>
+  
+          <div class = "diamonds">
+            <img src = "img/diamond.png">
+            <p>100</p>
+          </div>
+         
+          <div class="profile" onclick="toggleBox()">
+            <img src="img/profile.png" alt="User Icon"/>
+            <span>test_username</span>
+          </div>
+    
+  
         </div>
        
-        <div class="profile" onclick="toggleBox()">
-          <img src="img/profile.png" alt="User Icon"/>
-          <span>test_username</span>
-        </div>
-  
-
         <div id="profile-box" class="profile-box">
           <p><strong>John Doe</strong></p>
           <p>john@example.com</p>
@@ -63,33 +66,73 @@
 
        </div>
       </div>
-    
 
-      <div class="grid">
-        <section class="card blue-card">
-          <h3>Breathe</h3>
-          <p>Use guided breathing to calm your body.</p>
-          <button class="btn blue-btn">Begin Exercise</button>
-        </section>
+      <div class = "row-content">
+        <div class="grid">
+          <section class="card blue-card">
+            <h3>Breathe</h3>
+            <p>Use guided breathing to calm your body.</p>
+            <button class="btn blue-btn">Begin Exercise</button>
+          </section>
+  
+          <section class="card peach-card">
+            <h3>Your Pet</h3>
+            <div class="progress-bar"></div>
+            <img src="img/pet.png" alt="Cute Pet" style="width: 100px; margin-top: 1rem;" />
+          </section>
+  
+          <section class="card journal-card">
+            <h3>Journal</h3>
+            <p>An AI journal to assist in understanding your mood.</p>
+            <button class="btn peach-btn">Open Journal</button>
+          </section>
+  
+          <section class="card green-card">
+            <h3>Relaxing Games</h3>
+            <p>Play calming and fun games.</p>
+            <button class="btn green-btn">Explore Games</button>
+          </section>
+        </div> 
+     
+        <div class = "daily-tasks">
+         <h3>Daily Tasks</h3>
 
-        <section class="card peach-card">
-          <h3>Your Pet</h3>
-          <div class="progress-bar"></div>
-          <img src="img/pet.png" alt="Cute Pet" style="width: 100px; margin-top: 1rem;" />
-        </section>
+         <div id = "dt-box">
+          <h3>Daily Breathing</h3>
+            <p>Complete 3 Guided breathing exercises.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>5</p>
+            </div>
+         </div>
 
-        <section class="card journal-card">
-          <h3>Journal</h3>
-          <p>An AI journal to assist in understanding your mood.</p>
-          <button class="btn peach-btn">Open Journal</button>
-        </section>
+         <div id = "dt-box">
+          <h3>Play with your Pet!</h3>
+            <p>Complete 3 Guided breathing exercises.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>2</p>
+            </div>
+         </div>
+         
+         <div id = "dt-box">
+          <h3>Daily Games</h3>
+            <p>Earn at least 10xp in any game of your choice.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>15</p>
+            </div>
+         </div>
+         
+        
 
-        <section class="card green-card">
-          <h3>Relaxing Games</h3>
-          <p>Play calming and fun games.</p>
-          <button class="btn green-btn">Explore Games</button>
-        </section>
-      </div> 
+        </div>
+      </div>
+      
+
      </div>
     </main>
 

@@ -146,11 +146,18 @@
    background: #d49a8d;
  }
 
-  .blue-btn {
+  .blue-btn 
+  {
     background: #aecce9;
     color: white;
   }
   
+  .grey-btn 
+  {
+    background: #c7c7c7;
+    color: white;
+  }
+
   .peach-btn {
     background: #f9c6b7;
     color: white;
@@ -240,7 +247,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    margin-left:200px;
+    margin-left:400px;
   }
   
   .chat-container {
@@ -318,6 +325,19 @@
   /* -------------------------------------------------------------- */
   /* Universal Elements  */
 
+  .full-profile
+  {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+gap:30px;
+width: 100%;
+border:2px solid rgba(4, 108, 226, 0.286);
+padding:10px;
+border-radius: 10px;
+  }
+  
   .profile
   {
    display: flex;
@@ -334,16 +354,17 @@
  .profile-box 
  {
   position: absolute;
-  top: 110px; /* adjust based on your layout */
-  right: 20px;
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   display: none;
-  min-width: 200px;
+  width: 200px;
   z-index: 1;
+  right: 0;
+  top: 100%;
+
 }
 
  .profile:hover
@@ -359,18 +380,12 @@
 
 .profile-section
 {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center; 
-gap:30px;
-margin-right:0px;
-margin-left:auto;
-margin-top:10px;
-margin-bottom:auto;
-border:2px solid rgba(4, 108, 226, 0.286);
-padding:10px;
-border-radius: 10px;
+  position: relative;
+  margin-right:150px;
+  margin-left:200px;
+  margin-top:10px;
+  margin-bottom:auto;
+  width:500px;
 }
 
 .fade-in 
@@ -382,6 +397,7 @@ border-radius: 10px;
 {
   display: flex;
   flex-direction: row;
+  
 }
 
 .coins img
@@ -419,7 +435,8 @@ border-radius: 10px;
   animation: fadeIn 0.3s ease-out;
 }
 
-.profile-box p {
+.profile-box p 
+{
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
   color: #374151;
@@ -438,12 +455,41 @@ border-radius: 10px;
   background-color: #f3f4f6;
 }
 
+.row-content
+{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+}
+
+.row-content .daily-tasks
+{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+
+
+#dt-box
+{
+
+  border-radius: 25px;
+  padding: 1.5rem;
+  background: #f4f4f4;
+  width:100%;
+}
+
+.page-info
+{
+  width:300px;
+
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+
+
