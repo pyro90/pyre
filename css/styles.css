@@ -85,7 +85,67 @@
     width:100%;
   }
   
+  .blue-gradient-card 
+  {
+    background: linear-gradient(135deg, #bc41d5, #5eb4e6, #27bad8, #064694);
+    background-size: 200% 200%;
+    width:500px;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    color:white;
+  }
+
+  .white-grey-gradient-card 
+  {
+    background: linear-gradient(135deg, #90cff779, #f7f7f7, #3bcbff71);
+    width:500px;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    color:rgba(0, 0, 0, 0.477);
+    border:2px solid rgb(165, 224, 251);
+    transition: 0.9s;
+    
+  }
+
+  .white-grey-gradient-card:hover
+  {
+    translate: 0px -10px;
+    
+  }
+
+  #issue-theme1
+  {
+    background: white;
+    background-size: 200% 200%;
+    color:rgba(0, 0, 0, 0.389);
+    padding:10px;
+    border-radius: 50px;
+    text-align: center;
+    border:2px solid rgba(0, 0, 0, 0.275);
+  }
   
+  #issue-theme2
+  {
+    background: white;
+    background-size: 200% 200%;
+    color:rgba(0, 0, 0, 0.389);
+    padding:10px;
+    border-radius: 50px;
+    text-align: center;
+    border:2px solid rgba(0, 0, 0, 0.275);
+  }
+
+  #issue-themes
+  {
+   display: flex;
+   flex-direction: row;
+   gap:10px;
+  }
+
   .peach-card 
   {
     width:100%;
@@ -414,7 +474,7 @@ border-radius: 10px;
 
 .diamonds img
 {
-  height:40px;
+  height:27px;
 }
 
 
@@ -424,7 +484,7 @@ border-radius: 10px;
   flex-direction: row;
   align-items: center;
   gap:10px;
-  color:rgb(96, 141, 231);
+  color:rgb(255, 69, 23);
   font-weight: 1000;
 }
 
@@ -466,7 +526,7 @@ border-radius: 10px;
 {
   display: flex;
   flex-direction: row;
-  gap:210px;
+  gap:85px;
 }
 
 .row-content .daily-tasks
@@ -490,8 +550,9 @@ border-radius: 10px;
 
 .page-info
 {
-  width:300px;
+  width:350px;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }

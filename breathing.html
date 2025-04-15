@@ -3,95 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Breathing Exercises</title>
+  <title>Mental Health App</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
-      <h1>Mindful</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class = "active"><a href="breathing.html">Breathing</a></li>
-        <li><a href="pet.html">Pet</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="games.html">Games</a></li>
-      </ul>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Mental</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="breathing.html">Breathing</a></li>
+          <li><a href="pet.html">Pet</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="games.html">Games</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    </div>
-
-    <div class="main-content">
-     <div class = "fade-in">
-      
+    <!-- Main Content -->
+     <!-- Test Commit -->
+    <main class="main-content">
+      <div class = "fade-in">
       <div class = "header-content">
         <div class = "page-info">
           <h2>Breathing Exercises</h2>
-          <p style="margin-bottom: 2rem;">Here are some of the most popular relaxation games for you!</p>
+          <p style="margin-bottom: 2rem;">Try out these different breathing exercises to help you relax!</p>
           
         </div>
        
-        <div class = "profile-section">
-          <div class = "full-profile">
-            <div class = "coins">
-              <img src = "img/coin.png">
-              <p>100</p>
-            </div>
-    
-            <div class = "diamonds">
-              <img src = "img/diamond.png">
-              <p>100</p>
-            </div>
-           
-            <div class="profile" onclick="toggleBox()">
-              <img src="img/profile.png" alt="User Icon"/>
-              <span>test_username</span>
-            </div>
-      
-    
-          </div>
-         
-          <div id="profile-box" class="profile-box">
-            <p><strong>John Doe</strong></p>
-            <p>john@example.com</p>
-            <hr />
-            <a href="/dashboard">Dashboard</a>
-            <a href="/settings">Settings</a>
-            <a href="main.html">Logout</a>
+       <div class = "profile-section">
+        <div class = "full-profile">
+          <div class = "coins">
+            <img src = "img/coin.png">
+            <p>100</p>
           </div>
   
-         </div>
+          <div class = "diamonds">
+            <img src = "img/heart.png">
+            <p>5</p>
+          </div>
+         
+          <div class="profile" onclick="toggleBox()">
+            <img src="img/profile.png" alt="User Icon"/>
+            <span>test_username</span>
+          </div>
+    
+  
+        </div>
+       
+        <div id="profile-box" class="profile-box">
+          <p><strong>John Doe</strong></p>
+          <p>john@example.com</p>
+          <hr />
+          <a href="/dashboard">Dashboard</a>
+          <a href="/settings">Settings</a>
+          <a href="main.html">Logout</a>
+        </div>
+
+       </div>
       </div>
 
 
-<div class="card blue-card">
-  <h3>Box Breathing</h3>
-  <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
-  <button class="btn blue-btn">Start</button>
-</div>
 
-<div class="card peach-card">
-  <h3>4-7-8 Breathing</h3>
-  <p>Inhale for 4 seconds, hold for 7, exhale for 8. Great for calming down.</p>
-  <button class="btn peach-btn">Start</button>
-</div>
+      <div class = "row-content">
+        <div class="grid">
+          <section class="card blue-gradient-card">
+            <div style = "display:flex; flex-direction:column;gap:20px;">
+              <h3>Tailored Breathing Exercises</h3>
+              <p>Use guided breathing to calm your body.</p>
+              <button style = "width:200px; background-color: white; color:black;" class="btn blue-btn">Begin Exercise</button>
+            </div>
+   
+            <img style = "height:150px;"src = "img/man.png">
+          </section>
+  
 
-<div class="card blue-card">
-  <h3>Belly Breathing</h3>
-  <p>Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat.</p>
-  <button class="btn blue-btn">Start</button>
-</div>
+          <section>
+            <h1 style = " margin-bottom:20px;">General Breathing Exercises</h1>
+          </section>
 
-<!-- Tailored section (placeholder) -->
-<div class="card">
-  <h3>Recommended for You</h3>
-  <p>Log in to get breathing exercises based on how you’re feeling.</p>
-  <!-- Later: Add conditional logic for logged-in users -->
-</div>
+          <section class="card white-grey-gradient-card">
+            <div>
+              <h3>4-5-8 Technique</h3>
+              <div>
+                <p style = "margin-top:10px;">Duration :</p>
+                <div class="progress-bar"></div>
+              </div>
+              <div style = "margin-top:1rem;">
+                <p>Purpose :</p>
+                <div id = "issue-themes">
+                  <div id = "issue-theme1">
+                    <p>Anxiety</p>
+                  </div>
+                  <div id = "issue-theme2">
+                    <p>Panick Attacks</p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <img style = "width:100px; height:100px; margin:20px"src="img/brain.png" alt="Brain" style="width: 100px; height:100px; margin-top: 1rem;" />
+          </section>
 
+          <section class="card white-grey-gradient-card">
+            <div>
+              <h3>Box Breathing (4-4-4-4)</h3>
+              <div>
+                <p style = "margin-top:10px;">Duration :</p>
+                <div class="progress-bar"></div>
+              </div>
+              <div style = "margin-top:1rem;">
+                <p>Purpose :</p>
+                <div id = "issue-themes">
+                  <div id = "issue-theme1">
+                    <p>Anxiety</p>
+                  </div>
+
+                </div>  
+              </div>
+            </div>
+            <img style = "width:100px; height:100px; margin:20px"src="img/box.png" alt="Brain" style="width: 100px; height:100px; margin-top: 1rem;" />
+          </section>
+  
+          <section class="card journal-card">
+            <h3>Journal</h3>
+            <p>An AI journal to assist in understanding your mood.</p>
+            <button class="btn peach-btn">Open Journal</button>
+          </section>
+  
+          <section class="card green-card">
+            <h3>Relaxing Games</h3>
+            <p>Play calming and fun games.</p>
+            <button class="btn green-btn">Explore Games</button>
+          </section>
+        </div> 
+     
+
+        <div class = "daily-tasks">
+         <h3>Daily Tasks</h3>
+
+         <div id = "dt-box">
+          <h3>Daily Breathing</h3>
+            <p>Complete 3 Guided breathing exercises.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>5</p>
+            </div>
+         </div>
+
+         <div id = "dt-box">
+          <h3>Play with your Pet!</h3>
+            <p>Complete 3 Guided breathing exercises.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>2</p>
+            </div>
+         </div>
+         
+         <div id = "dt-box">
+          <h3>Daily Games</h3>
+            <p>Earn at least 10xp in any game of your choice.</p>
+            <button class="btn grey-btn">Breathing Exercises</button>
+            <div class = "coins">
+              <img src = "img/coin.png">
+              <p>15</p>
+            </div>
+         </div>
+         
+        
+
+        </div>
+      </div>
       
-    </div>
-  </div>
+
+     </div>
+    </main>
+
   </div>
   <script src="js/profile.js"></script>
 </body>
