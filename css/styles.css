@@ -101,7 +101,7 @@
   {
     background: linear-gradient(135deg, #90cff779, #f7f7f7, #3bcbff71);
     width:500px;
-    height:200px;
+    height:225px;
     display: flex;
     flex-direction: row;
     gap:50px;
@@ -125,7 +125,8 @@
     padding:10px;
     border-radius: 50px;
     text-align: center;
-    border:2px solid rgba(0, 0, 0, 0.275);
+    border:0px solid rgba(0, 0, 0, 0.275);
+    margin-top:10px;
   }
   
   #issue-theme2
@@ -136,7 +137,8 @@
     padding:10px;
     border-radius: 50px;
     text-align: center;
-    border:2px solid rgba(0, 0, 0, 0.275);
+    border:0px solid rgba(0, 0, 0, 0.275);
+    margin-top:10px;
   }
 
   #issue-themes
