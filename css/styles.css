@@ -99,14 +99,15 @@
 
   .white-grey-gradient-card 
   {
-    background: linear-gradient(135deg, #90cff779, #f7f7f7, #3bcbff71);
+    background: linear-gradient(135deg, #006bad79, #0051ff, #02007c);
+    background-size: 200% 200%;
     width:500px;
     height:225px;
     display: flex;
     flex-direction: row;
     gap:50px;
-    color:rgba(0, 0, 0, 0.477);
-    border:2px solid rgb(165, 224, 251);
+    color:rgba(255, 255, 255, 0.911);
+
     transition: 0.9s;
     
   }
@@ -117,27 +118,14 @@
     
   }
 
-  #issue-theme1
+  #issue-theme
   {
-    background: white;
     background-size: 200% 200%;
-    color:rgba(0, 0, 0, 0.389);
+    color:rgba(255, 255, 255, 0.911);
     padding:10px;
     border-radius: 50px;
     text-align: center;
-    border:0px solid rgba(0, 0, 0, 0.275);
-    margin-top:10px;
-  }
-  
-  #issue-theme2
-  {
-    background: white;
-    background-size: 200% 200%;
-    color:rgba(0, 0, 0, 0.389);
-    padding:10px;
-    border-radius: 50px;
-    text-align: center;
-    border:0px solid rgba(0, 0, 0, 0.275);
+    border: 3px solid rgba(255, 254, 254, 0.8);
     margin-top:10px;
   }
 
