@@ -37,7 +37,7 @@
   {
     display:block;
     background: #eaf4fb;
-    width: 200px;
+    width: 300px;
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: space-between;
@@ -406,6 +406,7 @@ width: 100%;
 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 padding:10px;
 border-radius: 10px;
+background-color: #1f293724;
   }
   
   .profile
@@ -419,7 +420,8 @@ border-radius: 10px;
    transition: 0.3s;
    z-index: 100;
    color:white;
-   font-weight: 1000;
+   font-weight: bold;
+   
  }
 
  .profile-box 
@@ -457,6 +459,7 @@ border-radius: 10px;
   margin-top:10px;
   margin-bottom:auto;
   width:500px;
+  
 }
 
 .fade-in 
@@ -555,6 +558,11 @@ border-radius: 10px;
   background: #f4f4f4;
   width:100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.129);
+}
+
+#dt-box p
+{
+  color:rgb(139, 139, 139);
 }
 
 .page-info
