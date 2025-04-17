@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048 - Mental Health App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <style>
+    /* Center the game and create a window effect */
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      margin-left:250px;  
+    }
+
+    .game-box {
+      position: relative;
+      width: 600px;
+      height: 750px;
+      border: 2px solid #ccc; /* Window border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      background-color: #fff; /* White background for the window */
+      border-radius: 8px; /* Rounded corners for the window */
+      overflow: hidden; /* Ensure the iframe fits within the container */
+      padding: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Optional: Add some padding and background to the page section */
+    .game-section h3 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .game-section p {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    /* Style for the instruction box */
+    .instruction-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #f9f9f9; /* Light background color */
+      padding: 20px;
+      margin-bottom: 20px; /* Space between instruction and game */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the instruction box */
+      width: 600px;
+    }
+
+    .arrow-image {
+      width: 50px; /* Adjust the size of the arrow image */
+      height: auto;
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .instruction-box p {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Mental</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breathing.html">Breathing</a></li>
+          <li><a href="pet.html">Pet</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li class="active"><a href="games.html">Games</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div id="background-blobs">
+        <div id="moving-square"></div>
+        <div id="moving-square2"></div>
+        <div id="moving-square3"></div>
+      </div>
+      <div class="fade-in">
+        <div class="header-content">
+          <div class="page-info">
+            <h2>2048 Game</h2>
+            <p style="margin-bottom: 2rem;">Enjoy a fun and relaxing game of 2048!</p>
+          </div>
+
+          <div class="profile-section">
+            <div class="full-profile">
+              <div class="coins">
+                <img src="img/coin.png">
+                <p>100</p>
+              </div>
+
+              <div class="diamonds">
+                <img src="img/heart.png">
+                <p>5</p>
+              </div>
+
+              <div class="profile" onclick="toggleBox()">
+                <img src="img/profile.png" alt="User Icon"/>
+                <span>test_username</span>
+              </div>
+            </div>
+
+            <div id="profile-box" class="profile-box">
+              <p><strong>John Doe</strong></p>
+              <p>john@example.com</p>
+              <hr />
+              <a href="/dashboard">Dashboard</a>
+              <a href="/settings">Settings</a>
+              <a href="main.html">Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2048 Game Section -->
+        <div class="game-section">
+    
+          <!-- Instruction Box with Arrow Keys Image and Text -->
+          <div class="instruction-box">
+            <img src="img/arrowkeys.png" alt="Arrow Keys" class="arrow-image"/>
+            <p>Use the arrow keys on your device to move the blocks and combine them to reach 2048!</p>
+          </div>
+
+          <!-- Game Box -->
+          <div class="game-box">
+            <!-- Embed the 2048 game in the iframe -->
+            <iframe src="2048-master/index.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/profile.js"></script>
+  <script src="js/background.js"></script>
+</body>
+</html>
